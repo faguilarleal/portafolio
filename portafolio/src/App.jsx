@@ -11,7 +11,7 @@ function App() {
         <Nadvar />
         <div className='content'>
           <Info />
-          <Proyects />
+          <div></div>
           <div className='tech'></div>
           <div className='contact'></div>
 

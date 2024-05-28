@@ -4,7 +4,7 @@ import './Proyects.css';
 function Proyects(){
     return(
         <div className='proyects'>
-            {/* <Card />             */}
+            <Card />            
         </div>
     );
 }

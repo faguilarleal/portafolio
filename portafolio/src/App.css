@@ -1,7 +1,10 @@
 body{
   margin:0;
-  background-color: #FBEEE6 ;
+  background-color: #f7f8ed;
+  background-size: 50% 50%;
 }
+
+
 
 .container-all{
   height: 100vh;
@@ -13,10 +16,10 @@ body{
 
 
 
-
 .content{
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   justify-content: center;
   align-items: center;
   width: 100%;
