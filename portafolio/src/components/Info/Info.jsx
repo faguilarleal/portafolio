@@ -18,14 +18,20 @@ function Info() {
                 </div>
             </div>
             <div id='personal-info' >
-                <div id='card-personal' data-aos='fade-up' data-aos-duration='100000'>
-                    <div id='image-container1'>
-                        <img id='img-me' src='./src/assets/FrancisPerfil.jpg' alt='Francis Aguilar' />
-                    </div>
-                    <div id='image-container2'>
+                <div id='card-personal'data-aos='fade-up' data-aos-duration='100000' >
+                        <div id='container-flip'>
+                            <div id='card-flip' >
+                                {/* front */}
+                                <div id='image-container1' className='flip'> 
+                                </div>
+                                {/* back */}
+                                <div id='image-container2' className='flip'>    
+                                </div>
+                            </div>
+                        </div>
                         
-                    </div>
                 </div>
+                
             </div>
         </div>
     )

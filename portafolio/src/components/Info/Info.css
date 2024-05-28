@@ -28,21 +28,53 @@
   align-items: center;
 }
 
-#image-container1{
-  margin-left: 30px;
-  margin-top: -30px;
-  width: 80%;
+
+#container-flip{
   height: 90%;
-  border-radius: 10px;
-}
-
-#img-me{
-  object-fit: cover;
   width: 100%;
-  height: 100%; 
-  border-radius: 10px;
-
+  position: relative;
 }
+
+#container-flip:hover > #card-flip{
+  cursor: pointer;
+  transform: rotateY(180deg);
+}
+
+#card-flip{
+  height: 100%;
+  width: 70%;
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+
+#image-container1{
+  background-image: url('./src/assets/FrancisPerfil.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#image-container2{
+  background-image: url('./src/assets/perfil2.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: blue;
+  transform: rotateY(180deg);
+}
+
+.flip{
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+
+
+
+
 
 
 
