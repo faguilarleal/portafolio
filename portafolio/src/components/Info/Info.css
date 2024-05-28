@@ -1,0 +1,56 @@
+.aboutme{
+    display: block;
+  }
+
+  .header-img{
+    width: 100%;
+  }
+
+#title-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    
+#name{
+    align-self: center;
+    color: black;
+    font-size: 34px;
+    font-family: "Sofia", sans-serif;
+}
+
+#title{
+    margin-top: -15px;
+    margin-bottom: 15px;
+    font-family:monospace;
+
+}
+
+#info {
+    white-space: pre-line;
+    font-family:monospace;
+}
+
+#content-info{
+    margin-left: 250px;
+    
+}
+
+  #profile-img{
+    width: 220px;
+    margin-top: -150px;
+    margin-left: -25px;
+    border-radius: 10px;
+    border: 5px solid white;
+    transition: 1s;
+  }
+  
+  #profile-img:hover{
+    width: 250px;
+    /* sombra */
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+
+
