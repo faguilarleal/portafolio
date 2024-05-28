@@ -2,7 +2,6 @@
     width: 100%;
     display: grid;
     grid-template-rows: auto 1fr;
-    margin-top: -90vh;
 }
 
 .title-pr{
@@ -19,5 +18,8 @@
 
 .content-proyects{
     display: flex;
+    flex-direction: column;
     margin-top: 100px;
+    justify-content: center;
+    align-items: center;
 }
