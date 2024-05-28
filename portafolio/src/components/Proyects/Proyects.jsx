@@ -1,67 +1,39 @@
 import Cards from './Cards.jsx';
 import './Proyects.css';
+import AOS from 'aos'; // Import AOS
+import { useEffect } from 'react'; // Import useEffect
+
 
 function Proyects(){
+    useEffect(() => {
+        AOS.init();
+    }, []); // Add this useEffect call
+    
+
     const proyects = [
         {
-            name: 'Proyecto 1',
-            description: 'Descripción del proyecto 1',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
+            name: 'My Melody',
+            description: 'Only CSS',
+            img: './src/assets/myMelody.jpg',
+            link: 'https://css-my-melody.web.app/'
         },
         {
-            name: 'Proyecto 2',
-            description: 'Descripción del proyecto 2',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
+            name: 'Calculadora',
+            description: 'Calculadora con Next.js',
+            img: './src/assets/calculadora.png',
+            link: 'https://calculadora-francis.web.app/'
         },
         {
-            name: 'Proyecto 3',
-            description: 'Descripción del proyecto 3',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
+            name: 'Blog TS',
+            description: 'Blog creado con React y Vite',
+            img: './src/assets/blog.png',
+            link: 'http://uwu-guate.site:3711/home'
         },
         {
-            name: 'Proyecto 4',
-            description: 'Descripción del proyecto 4',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 5',
-            description: 'Descripción del proyecto 5',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 6',
-            description: 'Descripción del proyecto 6',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 7',
-            description: 'Descripción del proyecto 7',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 8',
-            description: 'Descripción del proyecto 8',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 9',
-            description: 'Descripción del proyecto 9',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
-        },
-        {
-            name: 'Proyecto 10',
-            description: 'Descripción del proyecto 10',
-            img: 'https://via.placeholder.com/150',
-            link: 'https://www.google.com'
+            name: 'Chat',
+            description: 'Chat creado con js',
+            img: './src/assets/chat.png',
+            link: 'http://uwu-guate.site:3511'
         }
     ]
 
@@ -70,10 +42,20 @@ function Proyects(){
     return(
         <div className='proyects'>
             <div className='title-pr'>
-                <h2 id='name-pr'>Mis Proyectos</h2>
+                <h2 id='name' data-aos='fade-up' data-aos-duration='100000'>Mis Proyectos</h2>
             </div>
             <div className='content-proyects'>
-                <Cards name="my Melody" description='Proyecto css' img='./src/assets/myMelody.jpg' link='https://css-my-melody.web.app/'/>
+                {proyects.map((proyect, index) => {
+                    return(
+                        <Cards 
+                            key={index}
+                            name={proyect.name}
+                            description={proyect.description}
+                            img={proyect.img}
+                            link={proyect.link}
+                        />
+                    );
+                })}
             </div>
         </div>
     );
