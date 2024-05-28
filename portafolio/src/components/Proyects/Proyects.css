@@ -1,3 +1,40 @@
 .proyects{
     width: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    margin-top: -90vh;
+}
+
+.title-pr{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+}
+
+#name-pr{
+    font-size: 100px;
+    text-transform: uppercase;
+    font-family: 'Gambetta', serif;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #48602b;
+    outline: none;
+    text-align: center;
+    animation: slide 10s linear infinite;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(220%); }
+  }
+
+.content-proyects{
+    height: 80vh;
+    overflow: hidden;
 }

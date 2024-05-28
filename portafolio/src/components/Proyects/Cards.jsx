@@ -1,18 +1,32 @@
-import './Cards.css';
+import './Cards.css'
+import PropTypes from 'prop-types'
 
 
-function Card(){
+function Cards({name, description, img, link}){
     return(
-        <div className='card'>
-            <div className='image-box-card'>
-                <img src='./src/assets/myMelody.jpg'></img>
-            </div>
-            <div className='content-card'>
-                <h2>Proyecto 1</h2>
-                <p>Descripción del proyecto 1</p>
-            </div>
+        <a href={link} target="_blank" rel="noopener noreferrer">
+        <div className='wrapper' >
+            <figure>
+                <img className='img-card' src={img}></img>
+                <div className='overlay'>
+                    <p>{name}</p>
+                    <p>{description}</p>
+                </div>
+            </figure>
+
         </div>
+        </a>
+        
     )
 }
 
-export default Card;
+export default Cards;
+
+Cards.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired
+}
+
+

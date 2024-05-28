@@ -1,7 +1,13 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
 body{
   margin:0;
   background-color: #f7f8ed;
   background-size: 50% 50%;
+  scrollbar-width: none; /* Para Firefox */
+  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
 }
 
 

@@ -1,7 +1,7 @@
 import './Nadvar.css';
 
 function Nadvar() {
-    const opciones = ['About me', 'Proyects', 'Technologies', 'Contact'];
+    const opciones = ['Sobre mi', 'Proyectos', 'Tecnologías', 'Contacto'];
 
     return (
         <div className="nadvar-container">
