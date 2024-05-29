@@ -4,23 +4,25 @@ import AOS from 'aos'
 import { useEffect } from 'react'
 
 
-function Cards({name, description, img, link, id}){
+function Cards({name, description, img, link, img2}){
     useEffect(() => {
         AOS.init();
     }, []); // Add this useEffect call
     
     return(
-        <div className='container-card-p' id={id}>
+        <div className='container-card-p' >
             <a href={link} target="_blank" rel="noopener noreferrer" className='a-p'>
                     <div className='wrapper' data-aos='fade-right' data-aos-duration='100000' >
                         <figure>
-                            <img className='img-card' src={img}></img>
-                            <div className='overlay'>
+                            <div className='front-card' style={{ 
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img2})`, backgroundSize: `cover`  }}>
                                 <p>{name}</p>
                                 <p>{description}</p>
                             </div>
+                            <div className='overlay'style={{ 
+                            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${img})`, backgroundSize: `cover` }}>
+                            </div>
                         </figure>
-
                     </div>
                     </a>
                     
@@ -36,7 +38,7 @@ Cards.propTypes = {
   description: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired
+    img2: PropTypes.string.isRequired
 }
 
 

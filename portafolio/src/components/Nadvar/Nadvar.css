@@ -27,13 +27,27 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    color: #48602b  ;
     text-decoration: none;
     transition: 1s;
 }
-
-#opi:hover{
-    border-bottom: 1px solid black;
+.opi{
+    border-bottom: 1px solid transparent;
     cursor: pointer;
+    margin-top: 1px;
+    transition: all 0.5s ease;
+}
+
+.opi:hover{
+    border-bottom: 1px solid #48602b;
+    cursor: pointer;
+    margin-top: 1px;
+    transition: all 0.5s ease;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 23px;
 }
 
