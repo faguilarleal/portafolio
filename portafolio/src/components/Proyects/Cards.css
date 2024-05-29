@@ -72,3 +72,16 @@ figure:hover .overlay{
     height: 100%;
     object-fit: cover;
 }
+
+#name-p{
+  font-size: 30px;
+  font-family: 'Gambetta', serif;
+  letter-spacing: 2px;
+  transition: 700ms ease;
+  font-variation-settings: "wght" 311;
+  margin-bottom: 0.8rem;
+  color: white;
+  outline: none;
+  text-align: center;
+  border-bottom: 1px solid white;
+}
