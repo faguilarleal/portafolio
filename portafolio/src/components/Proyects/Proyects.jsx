@@ -1,4 +1,4 @@
-import Cards from './Cards.jsx';
+import Carrusel from '../Carrusel/Carrusel.jsx';
 import './Proyects.css';
 import AOS from 'aos'; // Import AOS
 import { useEffect } from 'react'; // Import useEffect
@@ -44,19 +44,7 @@ function Proyects(){
             <div className='title-pr'>
                 <h2 id='name' data-aos='fade-up' data-aos-duration='100000'>Mis Proyectos</h2>
             </div>
-            <div className='content-proyects'>
-                {proyects.map((proyect, index) => {
-                    return(
-                        <Cards 
-                            key={index}
-                            name={proyect.name}
-                            description={proyect.description}
-                            img={proyect.img}
-                            link={proyect.link}
-                        />
-                    );
-                })}
-            </div>
+            <Carrusel />
         </div>
     );
 }
