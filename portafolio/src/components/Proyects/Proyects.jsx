@@ -1,4 +1,3 @@
-import Carrusel from '../Carrusel/Carrusel.jsx';
 import './Proyects.css';
 import AOS from 'aos'; // Import AOS
 import { useEffect } from 'react'; // Import useEffect
@@ -44,7 +43,7 @@ function Proyects(){
             <div className='title-pr'>
                 <h2 id='name' data-aos='fade-up' data-aos-duration='100000'>Mis Proyectos</h2>
             </div>
-            <Carrusel />
+            
         </div>
     );
 }
