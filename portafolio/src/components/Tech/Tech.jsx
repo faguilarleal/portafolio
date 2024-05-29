@@ -1,4 +1,4 @@
-import Carrusel from "../components/Carrusel/Carrusel";
+import Carrusel from "../Carrusel/Carrusel";
 
 function Tech(){
     return(

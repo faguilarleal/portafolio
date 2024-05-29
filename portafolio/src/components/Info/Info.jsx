@@ -29,7 +29,13 @@ function Info() {
                                 </div>
                             </div>
                         </div>
-                        
+                        <div className='info-content' data-aos='fade-up' data-aos-duration='100000'>
+                            <h2 id='name-p2'>About me</h2>
+                            <p id='hola'>Hola ! Mi nombre es Francis Aguilar y soy estudiante de tercer año en la carrera 
+                                de Ciencias de la Computación y tecnologías de la Información en la UVG. 
+                                Este es mi portafolio personal, aqui puedes ver algunos de los proyectos que he desarrollado
+                                a lo largo de mi carrera estudiantil. Me gusta mucho aprender ! Espero lo disfrutes. </p>
+                        </div>
                 </div>
                 
             </div>

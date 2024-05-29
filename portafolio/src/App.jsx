@@ -4,7 +4,7 @@ import Info from './components/Info/Info'
 import Proyects from './components/Proyects/Proyects'
 import AOS from 'aos'
 import { useEffect } from 'react'
-import Tech from './Tech/Tech'
+import Tech from './components/Tech/Tech'
 
 function App() {
 
